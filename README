@@ -1,4 +1,15 @@
-Trying out some Java 7 stuff. Nothing fancy.
+Trying out some Java 7 stuff. 
+- Try with resources
+- Fork/Join
+- FileWalker
+- WatchService
+- Multi-catch
+- Diamond operator
+- Switch on String
+
+
+The WordCount class counts occurences of the given search phrase in all Java files under the specified directory.
+
 
 The Fork/Join code was copied from this article:
 http://www.oracle.com/technetwork/articles/java/fork-join-422606.html
