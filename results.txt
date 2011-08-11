@@ -1,0 +1,9 @@
+-- Windows Core 2 Duo
+
+Reading folders......done. Millis: 5355
+Searching single threaded... Millis: 4620. Found: 11775
+Searching in parallel... Millis: 2997. Found: 11775
+Searching single threaded... Millis: 4606. Found: 11775
+Searching in parallel... Millis: 2685. Found: 11775
+
+
