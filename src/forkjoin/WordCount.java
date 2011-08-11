@@ -98,30 +98,34 @@ public class WordCount {
 		System.out.println("...done. Millis: " + (System.currentTimeMillis() - start));
 
 		String search = "class";
-		start = System.currentTimeMillis();
-		System.out.print("Searching single threaded...");
-		long result = main.countOccurrencesOnSingleThread(folder, search);
-		System.out.print(" Millis: " + (System.currentTimeMillis() - start));
-		System.out.println(". Found: " + result);
 
-		start = System.currentTimeMillis();
-		System.out.print("Searching in parallel...");
-		result = main.countOccurrrencesParallel(folder, search);
-		System.out.print(" Millis: " + (System.currentTimeMillis() - start));
-		System.out.println(". Found: " + result);
-
-		start = System.currentTimeMillis();
 		System.out.print("Searching single threaded...");
+		long result;
 		result = main.countOccurrencesOnSingleThread(folder, search);
-		System.out.print(" Millis: " + (System.currentTimeMillis() - start));
+		result = main.countOccurrencesOnSingleThread(folder, search);
+
+		// start timing
+		start = System.currentTimeMillis();
+		result = main.countOccurrencesOnSingleThread(folder, search);
+		float took1 = (System.currentTimeMillis() - start);
+
+		System.out.print(" Millis: " + took1);
 		System.out.println(". Found: " + result);
 
-		start = System.currentTimeMillis();
 		System.out.print("Searching in parallel...");
 		result = main.countOccurrrencesParallel(folder, search);
-		System.out.print(" Millis: " + (System.currentTimeMillis() - start));
+		result = main.countOccurrrencesParallel(folder, search);
+
+		// start timing
+		start = System.currentTimeMillis();
+		result = main.countOccurrrencesParallel(folder, search);
+		float took2 = (System.currentTimeMillis() - start);
+
+		System.out.print(" Millis: " + took2);
 		System.out.println(". Found: " + result);
 
+		float improvement = took1/took2;
+		System.out.println("Improvement: " + improvement);
 
 	}
 }
