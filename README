@@ -1,1 +1,5 @@
 Trying out some Java 7 stuff. Nothing fancy.
+
+The Fork/Join code was copied from this article:
+http://www.oracle.com/technetwork/articles/java/fork-join-422606.html
+
