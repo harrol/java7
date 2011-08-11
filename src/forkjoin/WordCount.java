@@ -8,6 +8,11 @@ import java.util.concurrent.RecursiveTask;
 
 public class WordCount {
 
+    private static final String search = "class";
+
+    // Java projects are located here
+    private static final String baseFolder = "/Users/harro/projects";
+
 	private final ForkJoinPool forkJoinPool = new ForkJoinPool();
 
 
@@ -94,10 +99,8 @@ public class WordCount {
 		WordCount main = new WordCount();
 		System.out.print("Reading folders...");
 		long start = System.currentTimeMillis();
-		Folder folder = Folder.fromDirectory(new File("c:/projects"));
+		Folder folder = Folder.fromDirectory(new File(baseFolder));
 		System.out.println("...done. Millis: " + (System.currentTimeMillis() - start));
-
-		String search = "class";
 
 		System.out.print("Searching single threaded...");
 		long result;

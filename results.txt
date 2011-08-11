@@ -1,8 +1,19 @@
--- Windows XP on a Core 2 Duo (6400 @ 2.13GHz)
-
+-- Windows XP on a Core 2 Duo (2 cores, 2.13GHz)
 Reading folders......done. Millis: 5355
 Searching single threaded... Millis: 4605.0. Found: 11775
 Searching in parallel... Millis: 2748.0. Found: 11775
 Improvement: 1.6757642
 
 
+-- Mac OS X Lion 10.7 on a Intel Core I5 (4 cores, 2.5 GHz)
+ForkJoinPool(2)
+Reading folders......done. Millis: 19594
+Searching single threaded... Millis: 5323.0. Found: 69366
+Searching in parallel... Millis: 3625.0. Found: 69366
+Improvement: 1.4684138
+
+ForJoinPool(4)
+Reading folders......done. Millis: 15434
+Searching single threaded... Millis: 5335.0. Found: 69366
+Searching in parallel... Millis: 2121.0. Found: 69366
+Improvement: 2.515323
