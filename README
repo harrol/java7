@@ -8,7 +8,7 @@ Trying out some Java 7 stuff.
 - Switch on String
 
 
-The WordCount class counts occurences of the given search phrase in all Java files under the specified directory.
+The WordCount class counts occurences of the given search phrase in all Java files under the specified directory. It calculates the speed inprovement by first running single-threaded and then running in a fork/join pool.
 
 
 The Fork/Join code was copied from this article:
